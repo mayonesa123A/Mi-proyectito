@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Examen Interactivo</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
+    .card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
+    h2 { font-size: 1.2rem; }
+    .enunciado { font-style: italic; margin: 5px 0; }
+    button { margin-top: 10px; display: block; width: 100%; padding: 10px; border: none; background: #007bff; color: white; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #0056b3; }
+    .feedback { margin-top: 10px; font-weight: bold; }
+    .correcto { color: green; }
+    .incorrecto { color: red; }
+    #final { text-align: center; font-size: 1.5rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div id="pregunta-container">
+      <h2 id="pregunta"></h2>
+      <div id="enunciados"></div>
+      <div id="opciones"></div>
+      <div id="feedback" class="feedback"></div>
+    </div>
+    <div id="final" style="display: none;"></div>
+  </div>
+  <script src="preguntas.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
